@@ -8,7 +8,7 @@ var proxy = require('http-proxy-middleware');
 /**
  * Configure proxy middleware
  */
-var jsonPlaceholderProxy = proxy(
+var proxy = proxy(
     {
         target: 'http://127.0.0.1:8002',
         changeOrigin: true,             // for vhosted sites, changes host header to match to target's host
@@ -23,6 +23,6 @@ ykit.commands.server.run({
     cwd: process.cwd(),
     p: 8090,
     apis: {
-        '/api': jsonPlaceholderProxy
+        '/api': proxy
     }
 })
