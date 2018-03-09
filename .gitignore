@@ -1,0 +1,10 @@
+package-lock.json
+.DS_Store
+.vscode
+node_modules
+/coverage
+packages
+*.log
+test/e2e/reports
+test/e2e/screenshots
+test/coverage/
