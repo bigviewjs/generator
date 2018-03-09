@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "http-proxy-middleware": "^0.17.4",
     "webpack": "^3.11.0",
-    "ykit": "github:i5ting/ykit"
+    "ykit": "file:../ykit"
   }
 }
