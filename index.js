@@ -1,5 +1,5 @@
 
 var ykit = require("ykit")
 
-console.log(ykit.commands)
+console.log(ykit.commands.server)
 
