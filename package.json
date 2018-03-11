@@ -1,16 +1,39 @@
 {
-  "name": "paas",
+  "name": "paas-init",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bin/paas-init.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "bin": {
+    "paas-init": "bin/paas-init.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "homepage": "https://github.com/bigviewjs/generator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigviewjs/generator.git"
+  },
+  "bugs": "https://github.com/bigviewjs/generato/issues",
+  "keywords": [
+    "bigpipe",
+    "egg",
+    "bigview",
+    "paas-init"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.1.2",
+    "debug": "^3.1.0",
+    "glob": "^7.1.2",
     "http-proxy-middleware": "^0.17.4",
+    "inquirer": "^5.1.0",
+    "mkdirp": "^0.5.1",
     "webpack": "^3.11.0",
     "ykit": "i5ting/ykit"
   }

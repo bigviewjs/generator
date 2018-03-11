@@ -17,13 +17,13 @@
 安装
 
 ```
-$ npm i -g paas-cli
+$ npm i -g paas-init
 ```
 
 初始化
 
 ```
-$ paas init 
+$ paas-init someproject
 ```
 
 启动
@@ -37,3 +37,8 @@ $ paas start
 $ paas build
 ```
 
+## TODO
+
+- [x] paas-init
+- [ ] paas start
+- [ ] paas build

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>BigView 是一款基于 BigPipe 的 Node.js web 框架</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BigView 是一款基于 BigPipe 的 Node.js web 框架。">
+  <meta name="keywords" content="BigPipe,Eggjs,Node">
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://static.bootcss.com/www/assets/css/site.min.css?1520735277928" rel="stylesheet">
+  <link rel="apple-touch-icon-precomposed" href="http://i4.bvimg.com/635848/6b04ad113d1d828a.png">
+  <link rel="shortcut icon" href="http://i4.bvimg.com/635848/6b04ad113d1d828a.png">
+</head>
+<body>
+  <div class="jumbotron masthead">
+    <div class="container">
+      <h1>BigView</h1>
+      <h2>基于 BigPipe 的 Node.js web 框架。</h2>
+      <p class="masthead-button-links">
+        <a class="btn btn-lg btn-primary btn-shadow" href="https://github.com/bigviewjs/bigkoa" target="_blank" role="button">BigView 项目地址</a>
+      </p>
+      {# Main Pagelet placeholder #}
+      <div id="bpmodule-main"></div>
+    </div>
+  </div>
+  {# Other Pagelet placeholder #}
+  <div class="jumbotron" id="bpmodule-other"></div>
+  <script src="/public/js/bigview.runtime.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/unveil/1.3.0/jquery.unveil.min.js"></script>
+  <script src="https://cdn.bootcss.com/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+  <script src="https://cdn.bootcss.com/toc/0.3.2/toc.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+  <script src="https://static.bootcss.com/www/assets/js/site.min.js?1520735277928"></script>
+  </body>
+</html>
