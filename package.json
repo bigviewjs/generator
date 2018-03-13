@@ -2,12 +2,12 @@
   "name": "paas-init",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/paas-init.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "paas-init": "bin/paas-init.js"
+    "paas": "index.js"
   },
   "files": [
     "bin",
@@ -35,6 +35,7 @@
     "inquirer": "^5.1.0",
     "mkdirp": "^0.5.1",
     "webpack": "^3.11.0",
+    "yargs": "^11.0.0",
     "ykit": "i5ting/ykit"
   }
 }

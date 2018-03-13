@@ -1,30 +1,40 @@
-const ykit = require('ykit')
+#!/usr/bin/env node
 
-const Proxy = require('http-proxy-middleware')
+const yargs = require('yargs')
 
-const EggStarter = require('./lib/egg-starter')
-const starter = new EggStarter()
-// run
-starter.run()
+const init = require('./lib/cmd/init')
+const start = require('./lib/cmd/start')
 
-// Configure proxy middleware
-const proxy = Proxy(
-  {
-    target: 'http://127.0.0.1:6001',
-    // for vhosted sites, changes host header to match to target's host
-    changeOrigin: true,
-    logLevel: 'debug',
-    // rewrite path
-    pathRewrite: {
-      '^/api/*': '/'
-    }
+const options = {
+  eggPort: {
+    type: 'number',
+    description: 'egg port'
+  },
+  baseDir: {
+    type: 'string',
+    description: 'target directory'
+  },
+  publicDir: {
+    type: 'string',
+    description: 'ykit public directory'
+  },
+  workers: {
+    type: 'number',
+    description: 'egg workers count'
   }
-)
+}
 
-ykit.commands.server.run({
-  cwd: process.cwd() + '/public',
-  p: 8090,
-  apis: {
-    '/api': proxy
-  }
-})
+yargs
+  .command('init [projecetName]', 'init paas project', (_yargs) => {
+    _yargs.positional('projecetName', {
+      describe: 'projecetName to init'
+    })
+  }, init)
+  .command('start', 'start proxy', {}, start)
+  .usage(`Usage: paas init\n`)
+  .usage(`Usage: paas start --eggPort=6001 --workers=1 --baseDir=your_directory --publicDir=your_public_directory\n`)
+  .options(options)
+  .alias('h', 'help')
+  .version()
+  .help()
+  .argv
