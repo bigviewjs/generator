@@ -1,11 +1,16 @@
 const ykit = require('ykit')
 
-let proxy = require('http-proxy-middleware')
+const Proxy = require('http-proxy-middleware')
+
+const EggStarter = require('./lib/egg-starter')
+const starter = new EggStarter()
+// run
+starter.run()
 
 // Configure proxy middleware
-proxy = proxy(
+const proxy = Proxy(
   {
-    target: 'http://127.0.0.1:8002',
+    target: 'http://127.0.0.1:6001',
     // for vhosted sites, changes host header to match to target's host
     changeOrigin: true,
     logLevel: 'debug',
@@ -17,7 +22,7 @@ proxy = proxy(
 )
 
 ykit.commands.server.run({
-  cwd: process.cwd(),
+  cwd: process.cwd() + '/public',
   p: 8090,
   apis: {
     '/api': proxy
