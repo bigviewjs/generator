@@ -20,6 +20,15 @@
 $ npm i -g paas-init
 ```
 
+Usage
+
+```
+$ paas init [someproject]
+$ cd [someproject]
+$ npm install
+$ paas start
+```
+
 初始化
 
 ```
