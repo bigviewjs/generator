@@ -23,13 +23,22 @@ $ npm i -g paas-init
 初始化
 
 ```
-$ paas-init someproject
+$ paas init [someproject]
 ```
 
 启动
 
 ```
 $ paas start
+
+选项：
+  --ykitENV    ykit env                                                [字符串]
+  --eggPort    egg port                                                  [数字]
+  --baseDir    target directory                                         [字符串]
+  --publicDir  ykit public directory                                    [字符串]
+  --workers    egg workers count                                          [数字]
+  --version    显示版本号                                                 [字符串]
+  -h, --help   显示帮助信息                                                [字符串]
 ```
 构建  ykit打包压缩上传cdn
 

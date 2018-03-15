@@ -6,6 +6,10 @@ const init = require('./lib/cmd/init')
 const start = require('./lib/cmd/start')
 
 const options = {
+  ykitENV: {
+    type: 'string',
+    description: 'ykit env'
+  },
   eggPort: {
     type: 'number',
     description: 'egg port'
