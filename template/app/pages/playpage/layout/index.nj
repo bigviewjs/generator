@@ -26,6 +26,6 @@
   </div>
   {# Other Pagelet placeholder #}
   <div class="jumbotron" id="bpmodule-other"></div>
-  <script src="/js/bigview.runtime.js"></script>
+  <script src="/public/js/bigview.runtime.js"></script>
   </body>
 </html>

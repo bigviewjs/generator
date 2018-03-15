@@ -1,3 +1,5 @@
+'use strict'
+
 const Biglet = require('biglet')
 
 const Model = require('./lib/model')

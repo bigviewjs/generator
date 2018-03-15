@@ -1,3 +1,5 @@
+'use strict'
+
 const BigLet = require('biglet')
 const path = require('path')
 
