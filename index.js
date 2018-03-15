@@ -32,7 +32,7 @@ yargs
   }, init)
   .command('start', 'start proxy', {}, start)
   .usage(`Usage: paas init [projecetName]\n`)
-  .usage(`Usage: paas start --eggPort=6001 --workers=1 --baseDir=your_directory --publicDir=your_public_directory\n`)
+  .usage(`Usage: paas start --ykitENV=dev --eggPort=6001 --workers=1 --baseDir=your_directory --publicDir=your_public_directory\n`)
   .options(options)
   .alias('h', 'help')
   .version()
