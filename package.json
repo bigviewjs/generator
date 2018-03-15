@@ -1,6 +1,6 @@
 {
   "name": "paas-init",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,10 +9,6 @@
   "bin": {
     "paas": "index.js"
   },
-  "files": [
-    "bin",
-    "lib"
-  ],
   "homepage": "https://github.com/bigviewjs/generator",
   "repository": {
     "type": "git",
