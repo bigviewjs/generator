@@ -29,7 +29,7 @@
     "start": "paas start",
     "stop": "egg-scripts stop --title=egg-server-bigview-template",
     "dev": "egg-bin dev",
-    "debug": "egg-bin debug",
+    "debug": "paas debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
